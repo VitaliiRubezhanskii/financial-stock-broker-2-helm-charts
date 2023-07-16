@@ -48,3 +48,60 @@ readiness:
 envs:
   - name: SPRING_PROFILES_ACTIVE
     value: deployment
+
+application:
+  spring:
+    cloud:
+      kubernetes.discovery.all-namespaces: "true"
+      function.definition: "process"
+      stream:
+        default.contentType: "application/*+avro"
+        bindings:
+          process-out-0:
+            destination: "quote"
+            producer.useNativeEncoding: "true"
+        kafka:
+          binder:
+            brokers: "my-kafka-cluster-kafka-bootstrap:9092"
+          bindings:
+            process-out-0:
+              producer:
+                configuration:
+                  schema.registry.url: "http://strimzi-registry-operator:8081"
+                  key.serializer: org.apache.kafka.common.serialization.StringSerializer
+                  value.serializer: com.investment.serializer.SensorSerializer
+          streams:
+            binder:
+              configuration:
+                schema.registry.url: "http://strimzi-registry-operator:8081"
+                key.serializer: org.apache.kafka.common.serialization.StringSerializer
+                value.serializer: com.investment.serializer.SensorSerializer
+            bindings:
+              process-out-0:
+                producer:
+                  keySerde: org.apache.kafka.common.serialization.Serdes$StringSerde
+                  valueSerde: com.investment.serde.SensorSerde
+    datasource:
+      url: "jdbc:postgresql://postgres:5432/quotes_provider"
+      password: "postgres"
+      username: "postgres"
+      driverClassName: "org.postgresql.Driver"
+      hikari:
+        connectionTimeOut: "2000"
+        maximumPoolSize: "5"
+    jpa:
+      show-sql: "true"
+      database-platform: "org.hibernate.dialect.PostgreSQL94Dialect"
+      hibernate.ddl-auto: "update"
+      properties:
+        hibernate:
+          dialect: "org.hibernate.dialect.PostgreSQLDialect"
+          format_sql: "true"
+          temp.use_jdbc_metadata_defaults: "false"
+
+    flyway:
+      enabled: "false"
+      validate-on-migrate: "false"
+
+  security.basic.enabled: "false"
+  server.port: "8080"

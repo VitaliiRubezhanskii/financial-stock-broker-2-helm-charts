@@ -92,5 +92,5 @@ application:
         resourceserver:
           jwt:
             jwk-set-uri: "http://192.168.64.8:31760/auth/realms/My-Realm/protocol/openid-connect/certs"
-    security.basic.enabled: "false"
-    server.port: "8080"
+  security.basic.enabled: "false"
+  server.port: "8080"
