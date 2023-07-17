@@ -9,7 +9,7 @@ data:
   POSTGRES_USER: "postgres"
   POSTGRES_PASSWORD: "postgres"
 
-replicas: 1
+replicaCount: 1
 imagePullPolicy: "Always"
 image:
   repository: postgres
