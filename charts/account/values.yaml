@@ -28,7 +28,7 @@ resources:
     memory: 256Mi
 
 liveness:
-  initialDelaySeconds: 10
+  initialDelaySeconds: 30
   port: http
   path: /actuator/health/liveness
   failureThreshold: 3
@@ -37,7 +37,7 @@ liveness:
   periodSeconds: 5
 
 readiness:
-  initialDelaySeconds: 10
+  initialDelaySeconds: 30
   port: http
   path: /actuator/health/readiness
   failureThreshold: 3
