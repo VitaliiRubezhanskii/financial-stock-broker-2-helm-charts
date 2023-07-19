@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "clusterRoleBindingName": {
+            "type": "string"
+        },
+        "clusterRoleName": {
+            "type": "string"
+        },
+        "defaultNamespace": {
+            "type": "string"
+        },
+        "kafkaNamespace": {
+            "type": "string"
+        },
+        "serviceAccountName": {
+            "type": "string"
+        }
+    }
+}

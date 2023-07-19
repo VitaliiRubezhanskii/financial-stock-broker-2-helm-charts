@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "app": {
+            "type": "object",
+            "properties": {
+                "environment": {
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "namespace": {
+                    "type": "string"
+                },
+                "owner": {
+                    "type": "string"
+                }
+            }
+        },
+        "data": {
+            "type": "object",
+            "properties": {
+                "POSTGRES_DB": {
+                    "type": "string"
+                },
+                "POSTGRES_PASSWORD": {
+                    "type": "string"
+                },
+                "POSTGRES_USER": {
+                    "type": "string"
+                }
+            }
+        },
+        "image": {
+            "type": "object",
+            "properties": {
+                "repository": {
+                    "type": "string"
+                },
+                "tag": {
+                    "type": "number"
+                }
+            }
+        },
+        "imagePullPolicy": {
+            "type": "string"
+        },
+        "replicaCount": {
+            "type": "integer"
+        }
+    }
+}
