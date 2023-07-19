@@ -1,0 +1,6 @@
+serviceAccountName: api-service-account
+clusterRoleName: microservices-kubernetes-namespace-reader
+clusterRoleBindingName: service-pod-reader-account
+
+kafkaNamespace: kafka
+defaultNamespace: default
