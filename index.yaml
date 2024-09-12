@@ -3,18 +3,18 @@ entries:
   account:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.899287+02:00"
+    created: "2024-09-12T11:41:16.582122+02:00"
     description: A Helm chart for Kubernetes for deployment account service
-    digest: e47fed38c7966d2d40e9c626878f8c09f26ad439d8a93ebd53e812a73db83b0d
+    digest: 3cb7f56f6e64a972d708b63bd83ede714e1a647dc1321c83e565c956dcdad3cf
     name: account
     type: application
     urls:
-    - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/account-0.3.8.tgz
-    version: 0.3.8
+    - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/account-0.4.0.tgz
+    version: 0.4.0
   analytics:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.900106+02:00"
+    created: "2024-09-12T11:41:16.58299+02:00"
     description: A Helm chart for Kubernetes for deployment analytics service
     digest: 9906362917ff9c479c2cf37de34107eddef0f1f883b15e4c479c8810cb52157d
     name: analytics
@@ -25,7 +25,7 @@ entries:
   cluster-rbac:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.900599+02:00"
+    created: "2024-09-12T11:41:16.583641+02:00"
     description: A Helm chart for Kubernetes for deployment cluster rbac, service-accounts,
       roles
     digest: f144aa01c0943ec238ba22f0b2162c9072d7b198d2a229e38a6cd975c305d6ed
@@ -37,7 +37,7 @@ entries:
   gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.901306+02:00"
+    created: "2024-09-12T11:41:16.584588+02:00"
     description: A Helm chart for Kubernetes for deployment gateway service
     digest: b91b63e52746db4abf98a419d8b2d559523bd1b6dce8d4daa03cd22ca9daef39
     name: gateway
@@ -48,18 +48,18 @@ entries:
   order:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.901784+02:00"
+    created: "2024-09-12T11:41:16.58583+02:00"
     description: A Helm chart for Kubernetes for deployment order service
-    digest: 38481d3eb84e04e683aebb832b512b7aba2688d94d987af1743765e1549723d9
+    digest: 0a3976cfeca8982b1485b88e58170c6eb217f101d7cb65cde08f6a293990263b
     name: order
     type: application
     urls:
-    - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/order-0.3.5.tgz
-    version: 0.3.5
+    - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/order-0.4.0.tgz
+    version: 0.4.0
   postgres:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.902706+02:00"
+    created: "2024-09-12T11:41:16.586581+02:00"
     description: A Helm chart for Kubernetes for deployment postgres db
     digest: fa51baa760829206ce0d1c394bd463aeaff31e03a209ec5671ec3822c9cbc6e9
     name: postgres
@@ -70,7 +70,7 @@ entries:
   quotes-provider:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:27:28.903289+02:00"
+    created: "2024-09-12T11:41:16.587368+02:00"
     description: A Helm chart for Kubernetes for deployment quotes provider service
     digest: ac9b3a78608c79fe160d33202d56f06afff468f9377b0855df0454a50c23bce8
     name: quotes-provider
@@ -78,4 +78,4 @@ entries:
     urls:
     - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/quotes-provider-0.3.5.tgz
     version: 0.3.5
-generated: "2024-09-12T11:27:28.898364+02:00"
+generated: "2024-09-12T11:41:16.580632+02:00"
