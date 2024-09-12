@@ -88,7 +88,7 @@ spec:
             - name: DB_VENDOR
               value: postgres
             - name: DB_ADDR
-              value: postgres
+              value: postgresql
 {{/*              {{ include "keycloak.postgresql.fullname" . }}*/}}
             - name: DB_PORT
               value: "5432"
