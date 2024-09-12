@@ -1,5 +1,5 @@
 app:
-  name: api-gateway
+  name: gateway
   namespace: kafka
   environment: dev
   owner: vitalii.rubezhanskii@gmail.com
