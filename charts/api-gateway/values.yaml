@@ -57,20 +57,20 @@ application:
           locator:
             enabled: true
         default-filters:
-          - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
-          - TokenRelay=
-          - SaveSession
-          - StripPrefix=1
+          - TokenRelay
         routes:
-          - id: account-service
+          - id: account
             uri: lb://account
             predicates:
-              - Path=/account-service/**
-
-          - id: order-service
+              - Path=/account/**
+            filters:
+              - RewritePath=/account/(?<path>.*), /$\{path}
+          - id: order
             uri: lb://order
             predicates:
-              - Path=/order-service/**
+              - Path=/order/**
+            filters:
+              - RewritePath=/order/(?<path>.*), /$\{path}
     security:
       oauth2:
         client:
