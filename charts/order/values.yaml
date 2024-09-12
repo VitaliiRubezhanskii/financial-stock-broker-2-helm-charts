@@ -1,5 +1,5 @@
 app:
-  name: order-service
+  name: order
   namespace: kafka
   environment: dev
   owner: vitalii.rubezhanskii@gmail.com
