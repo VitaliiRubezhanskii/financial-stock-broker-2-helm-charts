@@ -115,7 +115,7 @@ extraEnv: |
   - name: DB_PORT
     value: "5432"
   - name: DB_DATABASE
-    value: keycloak
+    value: postgres
 
 
 # Additional environment variables for Keycloak mapped from Secret or ConfigMap
