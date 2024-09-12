@@ -88,18 +88,21 @@ spec:
             - name: DB_VENDOR
               value: postgres
             - name: DB_ADDR
-              value: {{ include "keycloak.postgresql.fullname" . }}
+              value: postgres
+{{/*              {{ include "keycloak.postgresql.fullname" . }}*/}}
             - name: DB_PORT
               value: {{ .Values.postgresql.service.port | quote }}
             - name: DB_DATABASE
               value: {{ .Values.postgresql.postgresqlDatabase | quote }}
             - name: DB_USER
-              value: {{ .Values.postgresql.postgresqlUsername | quote }}
+              value: keycloak
+{{/*              {{ .Values.postgresql.postgresqlUsername | quote }}*/}}
             - name: DB_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: {{ include "keycloak.postgresql.fullname" . }}
-                  key: postgresql-password
+              value: postgres
+{{/*              valueFrom:*/}}
+{{/*                secretKeyRef:*/}}
+{{/*                  name:{{ include "keycloak.postgresql.fullname" . }}*/}}
+{{/*                  key: postgresql-password*/}}
             {{- end }}
             {{- with .Values.extraEnv }}
             {{- tpl . $ | nindent 12 }}
