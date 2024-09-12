@@ -86,9 +86,9 @@ spec:
           env:
             {{- if .Values.postgresql.enabled }}
             - name: DB_VENDOR
-              value: postgresql
+              value: postgres
             - name: DB_ADDR
-              value: postgresql
+              value: postgres-postgresql
 {{/*              {{ include "keycloak.postgresql.fullname" . }}*/}}
             - name: DB_PORT
               value: "5432"
