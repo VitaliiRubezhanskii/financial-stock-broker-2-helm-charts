@@ -91,7 +91,8 @@ spec:
               value: postgres
 {{/*              {{ include "keycloak.postgresql.fullname" . }}*/}}
             - name: DB_PORT
-              value: {{ .Values.postgresql.service.port | quote }}
+              value: "5432"
+{{/*              {{ .Values.postgresql.service.port | quote }}*/}}
             - name: DB_DATABASE
               value: {{ .Values.postgresql.postgresqlDatabase | quote }}
             - name: DB_USER
