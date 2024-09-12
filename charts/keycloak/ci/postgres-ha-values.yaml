@@ -67,6 +67,8 @@ extraVolumes: |
 postgresql:
   enabled: true
   persistence:
+    dbPassword: postgres
+    dbUser: postgres
     enabled: true
 
 test:
