@@ -86,11 +86,11 @@ application:
               redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
           provider:
             my-keycloak-provider:
-              issuer-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm"
-              jwk-set-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/certs"
-              authorization-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/auth"
+              issuer-uri: "http://keycloak-http.kafka.svc.cluster.local/auth/realms/My-Realm"
+              jwk-set-uri: "http://keycloak-http.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/certs"
+              authorization-uri: "http://keycloak-http.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/auth"
         resourceserver:
           jwt:
-            jwk-set-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/certs"
+            jwk-set-uri: "http://keycloak-http.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/certs"
   security.basic.enabled: "false"
   server.port: "8080"
