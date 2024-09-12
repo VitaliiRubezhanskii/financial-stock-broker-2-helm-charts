@@ -391,7 +391,6 @@ pgchecker:
       memory: "32Mi"
 
 postgresql:
-  nameOverride: postgres
 #  name: postgres
   # If `true`, the Postgresql dependency is enabled
   enabled: true
