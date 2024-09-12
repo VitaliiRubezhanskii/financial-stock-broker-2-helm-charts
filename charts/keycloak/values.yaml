@@ -108,6 +108,14 @@ args: []
 extraEnv: |
   - name: KEYCLOAK_IMPORT
     value: /realm/realm.json
+  - name: DB_VENDOR
+    value: postgres
+  - name: DB_ADDR
+    value: postgres
+  - name: DB_PORT
+    value: "5432"
+  - name: DB_DATABASE
+    value: keycloak
 
 
 # Additional environment variables for Keycloak mapped from Secret or ConfigMap
