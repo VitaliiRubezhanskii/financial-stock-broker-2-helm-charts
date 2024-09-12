@@ -5,7 +5,7 @@ app:
   owner: vitalii.rubezhanskii@gmail.com
 
 image:
-  repository: vitalii1992/quotes-provider-service
+  repository: vitalii1992/order-service
   tag: latest
 
 replicaCount: 1
