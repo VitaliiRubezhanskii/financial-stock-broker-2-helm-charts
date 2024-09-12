@@ -3,7 +3,7 @@ entries:
   account:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.582122+02:00"
+    created: "2024-09-12T12:17:56.219458+02:00"
     description: A Helm chart for Kubernetes for deployment account service
     digest: 3cb7f56f6e64a972d708b63bd83ede714e1a647dc1321c83e565c956dcdad3cf
     name: account
@@ -14,7 +14,7 @@ entries:
   analytics:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.58299+02:00"
+    created: "2024-09-12T12:17:56.220005+02:00"
     description: A Helm chart for Kubernetes for deployment analytics service
     digest: 9906362917ff9c479c2cf37de34107eddef0f1f883b15e4c479c8810cb52157d
     name: analytics
@@ -25,7 +25,7 @@ entries:
   cluster-rbac:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.583641+02:00"
+    created: "2024-09-12T12:17:56.22021+02:00"
     description: A Helm chart for Kubernetes for deployment cluster rbac, service-accounts,
       roles
     digest: f144aa01c0943ec238ba22f0b2162c9072d7b198d2a229e38a6cd975c305d6ed
@@ -37,7 +37,7 @@ entries:
   gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.584588+02:00"
+    created: "2024-09-12T12:17:56.220674+02:00"
     description: A Helm chart for Kubernetes for deployment gateway service
     digest: b91b63e52746db4abf98a419d8b2d559523bd1b6dce8d4daa03cd22ca9daef39
     name: gateway
@@ -45,10 +45,39 @@ entries:
     urls:
     - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/gateway-0.3.5.tgz
     version: 0.3.5
+  keycloak:
+  - apiVersion: v2
+    appVersion: 17.0.1-legacy
+    created: "2024-09-12T12:17:56.223652+02:00"
+    description: Open Source Identity and Access Management For Modern Applications
+      and Services
+    digest: d700f8eee3a4c81d4f580e838451760656b87e427f361ae5c017e41a5c3d1bb8
+    home: https://www.keycloak.org/
+    icon: https://www.keycloak.org/resources/images/keycloak_icon_512px.svg
+    keywords:
+    - sso
+    - idm
+    - openid connect
+    - saml
+    - kerberos
+    - ldap
+    maintainers:
+    - email: unguiculus@gmail.com
+      name: unguiculus
+    - email: thomas.darimont+github@gmail.com
+      name: thomasdarimont
+    name: keycloak
+    sources:
+    - https://github.com/codecentric/helm-charts
+    - https://github.com/jboss-dockerfiles/keycloak
+    - https://github.com/bitnami/charts/tree/master/bitnami/postgresql
+    urls:
+    - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/keycloak-18.4.4.tgz
+    version: 18.4.4
   order:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.58583+02:00"
+    created: "2024-09-12T12:17:56.224152+02:00"
     description: A Helm chart for Kubernetes for deployment order service
     digest: 0a3976cfeca8982b1485b88e58170c6eb217f101d7cb65cde08f6a293990263b
     name: order
@@ -59,7 +88,7 @@ entries:
   postgres:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.586581+02:00"
+    created: "2024-09-12T12:17:56.224395+02:00"
     description: A Helm chart for Kubernetes for deployment postgres db
     digest: fa51baa760829206ce0d1c394bd463aeaff31e03a209ec5671ec3822c9cbc6e9
     name: postgres
@@ -70,7 +99,7 @@ entries:
   quotes-provider:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T11:41:16.587368+02:00"
+    created: "2024-09-12T12:17:56.224959+02:00"
     description: A Helm chart for Kubernetes for deployment quotes provider service
     digest: ac9b3a78608c79fe160d33202d56f06afff468f9377b0855df0454a50c23bce8
     name: quotes-provider
@@ -78,4 +107,4 @@ entries:
     urls:
     - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/quotes-provider-0.3.5.tgz
     version: 0.3.5
-generated: "2024-09-12T11:41:16.580632+02:00"
+generated: "2024-09-12T12:17:56.218841+02:00"
