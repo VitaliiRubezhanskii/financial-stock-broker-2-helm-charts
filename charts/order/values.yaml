@@ -54,7 +54,7 @@ application:
     cloud:
       kubernetes.discovery.all-namespaces: "true"
     datasource:
-      url: "jdbc:postgresql://postgres:5432/quotes_provider"
+      url: "jdbc:postgresql://postgres-postgresql:5432/quotes_provider"
       password: "postgres"
       username: "postgres"
       driverClassName: "org.postgresql.Driver"
