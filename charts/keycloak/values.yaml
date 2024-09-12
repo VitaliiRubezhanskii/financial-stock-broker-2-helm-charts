@@ -208,10 +208,18 @@ startupScripts:
   # echo 'Hello from my custom startup script!'
 
 # Add additional volumes, e. g. for custom themes
-extraVolumes: ""
+extraVolumes: |
+  - name: realm-secret
+    secret:
+      secretName: realm-secret
+
 
 # Add additional volumes mounts, e. g. for custom themes
-extraVolumeMounts: ""
+extraVolumeMounts: |
+  - name: realm-secret
+    mountPath: "/realm/"
+    readOnly: true
+
 
 # Add additional ports, e. g. for admin console or exposing JGroups ports
 extraPorts: []
@@ -385,11 +393,11 @@ pgchecker:
 postgresql:
   name: postgres
   # If `true`, the Postgresql dependency is enabled
-  enabled: true
+  enabled: false
   # PostgreSQL User to create
-  postgresqlUsername: keycloak
+  postgresqlUsername: postgres
   # PostgreSQL Password for the new user
-  postgresqlPassword: keycloak
+  postgresqlPassword: postgres
   # PostgreSQL Database to create
   postgresqlDatabase: keycloak
   # PostgreSQL network policy configuration
