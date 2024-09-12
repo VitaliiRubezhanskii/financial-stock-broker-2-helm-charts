@@ -116,6 +116,10 @@ extraEnv: |
     value: "5432"
   - name: DB_DATABASE
     value: postgres
+  - name: DB_USER_FILE
+    value: /secrets/db-creds/user
+  - name: DB_PASSWORD_FILE
+    value: /secrets/db-creds/password
 
 
 # Additional environment variables for Keycloak mapped from Secret or ConfigMap
@@ -215,11 +219,17 @@ extraVolumes: |
   - name: realm-secret
     secret:
       secretName: realm-secret
+  - name: db-creds
+    secret:
+      secretName: keycloak-db-creds
 
 # Add additional volumes mounts, e. g. for custom themes
 extraVolumeMounts: |
   - name: realm-secret
     mountPath: "/realm/"
+    readOnly: true
+  - name: db-creds
+    mountPath: /secrets/db-creds
     readOnly: true
 
 # Add additional ports, e. g. for admin console or exposing JGroups ports
