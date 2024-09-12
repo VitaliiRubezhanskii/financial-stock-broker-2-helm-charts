@@ -1,0 +1,16 @@
+app:
+  name: postgres
+  namespace: kafka
+  environment: dev
+  owner: vitalii.rubezhanskii@gmail.com
+
+data:
+  POSTGRES_DB: quotes_provider
+  POSTGRES_USER: postgres
+  POSTGRES_PASSWORD: postgres
+
+replicaCount: 1
+imagePullPolicy: Always
+image:
+  repository: postgres
+  tag: 10.4

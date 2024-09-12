@@ -28,7 +28,7 @@ resources:
     memory: 256Mi
 
 liveness:
-  initialDelaySeconds: 10
+  initialDelaySeconds: 40
   port: http
   path: /actuator/health/liveness
   failureThreshold: 3
@@ -37,7 +37,7 @@ liveness:
   periodSeconds: 5
 
 readiness:
-  initialDelaySeconds: 10
+  initialDelaySeconds: 50
   port: http
   path: /actuator/health/readiness
   failureThreshold: 3
@@ -86,11 +86,11 @@ application:
               redirect-uri: "{baseUrl}/login/oauth2/code/keycloak"
           provider:
             my-keycloak-provider:
-              issuer-uri: "http://192.168.64.8:31760/auth/realms/My-Realm"
-              jwk-set-uri: "http://192.168.64.8:31760/auth/realms/My-Realm/protocol/openid-connect/certs"
-              authorization-uri: "http://192.168.64.8:31760/auth/realms/My-Realm/protocol/openid-connect/auth"
+              issuer-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm"
+              jwk-set-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/certs"
+              authorization-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/auth"
         resourceserver:
           jwt:
-            jwk-set-uri: "http://192.168.64.8:31760/auth/realms/My-Realm/protocol/openid-connect/certs"
+            jwk-set-uri: "http://keycloak-headless.kafka.svc.cluster.local/auth/realms/My-Realm/protocol/openid-connect/certs"
   security.basic.enabled: "false"
   server.port: "8080"
