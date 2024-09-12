@@ -229,7 +229,7 @@ extraVolumeMounts: |
     mountPath: "/realm/"
     readOnly: true
   - name: db-creds
-    mountPath: "/db-creds/"
+    mountPath: "secrets/db-creds
     readOnly: true
 
 # Add additional ports, e. g. for admin console or exposing JGroups ports
