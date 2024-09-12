@@ -3,9 +3,9 @@ entries:
   account:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.374709+02:00"
+    created: "2024-09-12T10:52:27.760836+02:00"
     description: A Helm chart for Kubernetes for deployment account service
-    digest: 8e083213dd9cd599f1095f571ddd1daf7623c640a07b2e52f544c222fc56a9cc
+    digest: beeb6ab5530a6cc09b49e8aa1a342e15e5f3585332948db06f3bd876120b5a48
     name: account
     type: application
     urls:
@@ -14,7 +14,7 @@ entries:
   analytics:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.375498+02:00"
+    created: "2024-09-12T10:52:27.761476+02:00"
     description: A Helm chart for Kubernetes for deployment analytics service
     digest: 0260954cf8ca3b9645ed285166350b14222228fc4478097d5df9d29420c5da3e
     name: analytics
@@ -25,7 +25,7 @@ entries:
   cluster-rbac:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.37883+02:00"
+    created: "2024-09-12T10:52:27.761752+02:00"
     description: A Helm chart for Kubernetes for deployment cluster rbac, service-accounts,
       roles
     digest: f144aa01c0943ec238ba22f0b2162c9072d7b198d2a229e38a6cd975c305d6ed
@@ -37,7 +37,7 @@ entries:
   gateway:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.379636+02:00"
+    created: "2024-09-12T10:52:27.762626+02:00"
     description: A Helm chart for Kubernetes for deployment gateway service service
     digest: 0672300cda4b790e4e359076b8d1a203ea92e4a60ab11caa1fcc69c9e69b4684
     name: gateway
@@ -48,7 +48,7 @@ entries:
   order:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.380418+02:00"
+    created: "2024-09-12T10:52:27.763376+02:00"
     description: A Helm chart for Kubernetes for deployment order service
     digest: 618898b7652f5e11649ca6f906209c6a400ba4abc51eff896007aa84c1801e55
     name: order
@@ -59,7 +59,7 @@ entries:
   postgres:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.380965+02:00"
+    created: "2024-09-12T10:52:27.763956+02:00"
     description: A Helm chart for Kubernetes for deployment postgres db
     digest: fa51baa760829206ce0d1c394bd463aeaff31e03a209ec5671ec3822c9cbc6e9
     name: postgres
@@ -70,7 +70,7 @@ entries:
   quotes-provider:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2024-09-12T10:38:15.381634+02:00"
+    created: "2024-09-12T10:52:27.764606+02:00"
     description: A Helm chart for Kubernetes for deployment quotes provider service
     digest: 07183d5ae8ce2c8df8e8561069d33bbd26ba85dcbb67a04249e019b3eeb0d1cd
     name: quotes-provider
@@ -78,4 +78,4 @@ entries:
     urls:
     - https://vitaliirubezhanskii.github.io/financial-stock-broker-2-helm-charts/quotes-provider-0.3.5.tgz
     version: 0.3.5
-generated: "2024-09-12T10:38:15.373718+02:00"
+generated: "2024-09-12T10:52:27.75979+02:00"
