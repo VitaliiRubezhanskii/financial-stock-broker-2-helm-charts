@@ -86,7 +86,7 @@ spec:
           env:
             {{- if .Values.postgresql.enabled }}
             - name: DB_VENDOR
-              value: postgres
+              value: postgresql
             - name: DB_ADDR
               value: postgresql
 {{/*              {{ include "keycloak.postgresql.fullname" . }}*/}}
