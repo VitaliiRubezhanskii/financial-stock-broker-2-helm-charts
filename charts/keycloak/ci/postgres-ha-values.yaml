@@ -51,8 +51,8 @@ extraEnv: |
 secrets:
   admin-creds:
     stringData:
-      user: admin
-      password: secret
+      user: postgres
+      password: postgres
 
 extraVolumeMounts: |
   - name: admin-creds
