@@ -73,7 +73,7 @@ application:
           - id: order
             uri: lb://order
             predicates:
-              - Path=/order-order-service/**
+              - Path=/order-service/**
             filters:
               - RewritePath=/order-service/(?<path>.*), /$\{path}
     security:
