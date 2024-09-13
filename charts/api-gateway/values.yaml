@@ -52,6 +52,11 @@ envs:
 application:
   spring:
     cloud:
+      bootstrap:
+        enabled: true
+      loadbalancer:
+        ribbon:
+          enabled: false
       gateway:
         discovery:
           locator:
