@@ -8,6 +8,8 @@ metadata:
     env: {{ .Values.app.environment }}
 spec:
   replicas: {{ .Values.replicaCount }}
+  strategy:
+    type: RollingUpdate
   selector:
     matchLabels:
       app: {{ .Values.app.name }}

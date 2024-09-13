@@ -7,11 +7,12 @@ spec:
   ports:
   {{- range .Values.ports }}
   - targetPort: {{ .value }}
+    protocol: TCP
     name: {{ .name }}
     port: {{ .value }}
   {{- end }}
   selector:
     app: {{ .Values.app.name }}
   type: {{ .Values.service.type }}
-  externalIPs:
-    - {{ .Values.service.externalIP }}
+{{/*  externalIPs:*/}}
+{{/*    - {{ .Values.service.externalIP }}*/}}
