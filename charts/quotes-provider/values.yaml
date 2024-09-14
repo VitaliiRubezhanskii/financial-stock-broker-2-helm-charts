@@ -62,7 +62,7 @@ application:
             producer.useNativeEncoding: "true"
         kafka:
           binder:
-            brokers: "my-kafka-cluster-kafka-bootstrap:9092"
+            brokers: "my-cluster-kafka-bootstrap:9092"
           bindings:
             process-out-0:
               producer:
