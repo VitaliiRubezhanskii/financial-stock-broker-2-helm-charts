@@ -82,7 +82,7 @@ application:
                   keySerde: org.apache.kafka.common.serialization.Serdes$StringSerde
                   valueSerde: com.investment.serde.SensorSerde
     datasource:
-      url: "jdbc:postgresql://postgres:5432/quotes_provider"
+      url: "jdbc:postgresql://postgres-postgresql:5432/quotes_provider"
       password: "postgres"
       username: "postgres"
       driverClassName: "org.postgresql.Driver"
@@ -91,7 +91,7 @@ application:
         maximumPoolSize: "5"
     jpa:
       show-sql: "true"
-      database-platform: "org.hibernate.dialect.PostgreSQL94Dialect"
+      database-platform: "org.hibernate.dialect.PostgreSQLDialect"
       hibernate.ddl-auto: "update"
       properties:
         hibernate:
