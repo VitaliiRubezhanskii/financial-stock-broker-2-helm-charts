@@ -1,5 +1,5 @@
 app:
-  name: analytics-service
+  name: analytics
   namespace: kafka
   environment: dev
   owner: vitalii.rubezhanskii@gmail.com
