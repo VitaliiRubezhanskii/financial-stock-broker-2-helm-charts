@@ -29,7 +29,7 @@ resources:
 
 liveness:
   initialDelaySeconds: 10
-  port: "9235"
+  port: "9236"
   path: /actuator/health/liveness
   failureThreshold: 3
   successThreshold: 1
@@ -38,7 +38,7 @@ liveness:
 
 readiness:
   initialDelaySeconds: 10
-  port: "9235"
+  port: "92356"
   path: /actuator/health/readiness
   failureThreshold: 3
   successThreshold: 1
@@ -118,7 +118,7 @@ application:
         enabled: "true"
       readinessState:
         enabled: "true"
-    server.port: "9235"
+    server.port: "9236"
     security:
       enabled: "false"
     endpoints:
