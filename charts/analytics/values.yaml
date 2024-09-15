@@ -38,7 +38,7 @@ liveness:
 
 readiness:
   initialDelaySeconds: 10
-  port: "92356"
+  port: "9236"
   path: /actuator/health/readiness
   failureThreshold: 3
   successThreshold: 1
