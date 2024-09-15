@@ -30,7 +30,7 @@ resources:
 
 liveness:
   initialDelaySeconds: 10
-  port: http
+  port: "9235"
   path: /actuator/health/liveness
   failureThreshold: 3
   successThreshold: 1
@@ -39,7 +39,7 @@ liveness:
 
 readiness:
   initialDelaySeconds: 10
-  port: http
+  port: "9235"
   path: /actuator/health/readiness
   failureThreshold: 3
   successThreshold: 1
