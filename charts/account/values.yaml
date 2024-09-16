@@ -6,7 +6,7 @@ app:
 
 image:
   repository: vitalii1992/account-service
-  tag: "5.0"
+  tag: latest
 
 replicaCount: 2
 imagePullPolicy: Always
